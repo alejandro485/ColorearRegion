@@ -160,114 +160,114 @@ public class VistaDatos extends JFrame implements MouseListener, ActionListener 
 	 */
 	public VistaDatos() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 886, 395);
+		setBounds(100, 100, 1152, 678);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
 		JLabel lblCl = new JLabel("1");
-		lblCl.setBounds(570, 12, 18, 15);
+		lblCl.setBounds(840, 12, 18, 15);
 		contentPane.add(lblCl);
 
 		JLabel label = new JLabel("2");
-		label.setBounds(600, 12, 18, 15);
+		label.setBounds(870, 12, 18, 15);
 		contentPane.add(label);
 
 		JLabel label_1 = new JLabel("3");
-		label_1.setBounds(630, 12, 18, 15);
+		label_1.setBounds(900, 12, 18, 15);
 		contentPane.add(label_1);
 
 		JLabel label_2 = new JLabel("4");
-		label_2.setBounds(660, 12, 18, 15);
+		label_2.setBounds(930, 12, 18, 15);
 		contentPane.add(label_2);
 
 		JLabel label_3 = new JLabel("5");
-		label_3.setBounds(690, 12, 18, 15);
+		label_3.setBounds(960, 12, 18, 15);
 		contentPane.add(label_3);
 
 		JLabel label_4 = new JLabel("6");
-		label_4.setBounds(720, 12, 18, 15);
+		label_4.setBounds(990, 12, 18, 15);
 		contentPane.add(label_4);
 
 		JLabel label_5 = new JLabel("7");
-		label_5.setBounds(750, 12, 18, 15);
+		label_5.setBounds(1020, 12, 18, 15);
 		contentPane.add(label_5);
 
 		JLabel label_6 = new JLabel("8");
-		label_6.setBounds(780, 12, 18, 15);
+		label_6.setBounds(1050, 12, 18, 15);
 		contentPane.add(label_6);
 
 		JLabel label_7 = new JLabel("9");
-		label_7.setBounds(810, 12, 18, 15);
+		label_7.setBounds(1080, 12, 18, 15);
 		contentPane.add(label_7);
 
 		JLabel label_8 = new JLabel("10");
-		label_8.setBounds(840, 12, 18, 15);
+		label_8.setBounds(1110, 12, 18, 15);
 		contentPane.add(label_8);
 
 		JLabel label_9 = new JLabel("1");
-		label_9.setBounds(530, 30, 18, 15);
+		label_9.setBounds(800, 30, 18, 15);
 		contentPane.add(label_9);
 
 		JLabel label_10 = new JLabel("2");
-		label_10.setBounds(530, 60, 18, 15);
+		label_10.setBounds(800, 60, 18, 15);
 		contentPane.add(label_10);
 
 		JLabel label_11 = new JLabel("3");
-		label_11.setBounds(530, 90, 18, 15);
+		label_11.setBounds(800, 90, 18, 15);
 		contentPane.add(label_11);
 
 		JLabel label_12 = new JLabel("4");
-		label_12.setBounds(530, 120, 18, 15);
+		label_12.setBounds(800, 120, 18, 15);
 		contentPane.add(label_12);
 
 		JLabel label_13 = new JLabel("5");
-		label_13.setBounds(530, 150, 18, 15);
+		label_13.setBounds(800, 150, 18, 15);
 		contentPane.add(label_13);
 
 		JLabel label_14 = new JLabel("6");
-		label_14.setBounds(530, 180, 18, 15);
+		label_14.setBounds(800, 180, 18, 15);
 		contentPane.add(label_14);
 
 		JLabel label_15 = new JLabel("7");
-		label_15.setBounds(530, 210, 18, 15);
+		label_15.setBounds(800, 210, 18, 15);
 		contentPane.add(label_15);
 
 		JLabel label_16 = new JLabel("8");
-		label_16.setBounds(530, 240, 18, 15);
+		label_16.setBounds(800, 240, 18, 15);
 		contentPane.add(label_16);
 
 		JLabel label_17 = new JLabel("9");
-		label_17.setBounds(530, 270, 18, 15);
+		label_17.setBounds(800, 270, 18, 15);
 		contentPane.add(label_17);
 
 		JLabel label_18 = new JLabel("10");
-		label_18.setBounds(530, 300, 18, 15);
+		label_18.setBounds(800, 300, 18, 15);
 		contentPane.add(label_18);
 
 		grafo = new Grafo();
 
 		canvasEntrada = new CanvasEntradaGrafo();
-		canvasEntrada.setBounds(10, 10, 500, 338);
+		canvasEntrada.setBounds(10, 10, 770, 623);
 		canvasEntrada.setVisible(true);
 		canvasEntrada.addMouseListener(this);
 		contentPane.add(canvasEntrada);
 
 		btnBorrar = new JButton("Limpiar");
-		btnBorrar.setBounds(540, 330, 100, 20);
+		btnBorrar.setBounds(810, 330, 100, 20);
 		btnBorrar.addActionListener(this);
 		btnBorrar.setActionCommand("br");
 		contentPane.add(btnBorrar);
 
 		btnMatriz = new JButton("Matriz");
-		btnMatriz.setBounds(650, 330, 100, 20);
+		btnMatriz.setBounds(920, 330, 100, 20);
 		btnMatriz.addActionListener(this);
 		btnMatriz.setActionCommand("ma");
 		contentPane.add(btnMatriz);
 
 		btnRecord = new JButton("Regiones");
-		btnRecord.setBounds(760, 330, 110, 20);
+		btnRecord.setBounds(1030, 330, 110, 20);
 		btnRecord.addActionListener(this);
 		btnRecord.setActionCommand("re");
 		contentPane.add(btnRecord);
@@ -329,511 +329,511 @@ public class VistaDatos extends JFrame implements MouseListener, ActionListener 
 	private void cargarCheckBox() {
 		// primera fila
 		ch11 = new JCheckBox();
-		ch11.setBounds(570, 30, 20, 20);
+		ch11.setBounds(840, 30, 20, 20);
 		ch11.setEnabled(false);
 		contentPane.add(ch11);
 
 		ch12 = new JCheckBox();
-		ch12.setBounds(600, 30, 20, 20);
+		ch12.setBounds(870, 30, 20, 20);
 		ch12.setEnabled(false);
 		contentPane.add(ch12);
 
 		ch13 = new JCheckBox();
-		ch13.setBounds(630, 30, 20, 20);
+		ch13.setBounds(900, 30, 20, 20);
 		ch13.setEnabled(false);
 		contentPane.add(ch13);
 
 		ch14 = new JCheckBox();
-		ch14.setBounds(660, 30, 20, 20);
+		ch14.setBounds(930, 30, 20, 20);
 		ch14.setEnabled(false);
 		contentPane.add(ch14);
 
 		ch15 = new JCheckBox();
-		ch15.setBounds(690, 30, 20, 20);
+		ch15.setBounds(960, 30, 20, 20);
 		ch15.setEnabled(false);
 		contentPane.add(ch15);
 
 		ch16 = new JCheckBox();
-		ch16.setBounds(720, 30, 20, 20);
+		ch16.setBounds(990, 30, 20, 20);
 		ch16.setEnabled(false);
 		contentPane.add(ch16);
 
 		ch17 = new JCheckBox();
-		ch17.setBounds(750, 30, 20, 20);
+		ch17.setBounds(1020, 30, 20, 20);
 		ch17.setEnabled(false);
 		contentPane.add(ch17);
 
 		ch18 = new JCheckBox();
-		ch18.setBounds(780, 30, 20, 20);
+		ch18.setBounds(1050, 30, 20, 20);
 		ch18.setEnabled(false);
 		contentPane.add(ch18);
 
 		ch19 = new JCheckBox();
-		ch19.setBounds(810, 30, 20, 20);
+		ch19.setBounds(1080, 30, 20, 20);
 		ch19.setEnabled(false);
 		contentPane.add(ch19);
 
 		ch110 = new JCheckBox();
-		ch110.setBounds(840, 30, 20, 20);
+		ch110.setBounds(1110, 30, 20, 20);
 		ch110.setEnabled(false);
 		contentPane.add(ch110);
 
 		// segunda fila
 		ch21 = new JCheckBox();
-		ch21.setBounds(570, 60, 20, 20);
+		ch21.setBounds(840, 60, 20, 20);
 		ch21.setEnabled(false);
 		contentPane.add(ch21);
 
 		ch22 = new JCheckBox();
-		ch22.setBounds(600, 60, 20, 20);
+		ch22.setBounds(870, 60, 20, 20);
 		ch22.setEnabled(false);
 		contentPane.add(ch22);
 
 		ch23 = new JCheckBox();
-		ch23.setBounds(630, 60, 20, 20);
+		ch23.setBounds(900, 60, 20, 20);
 		ch23.setEnabled(false);
 		contentPane.add(ch23);
 
 		ch24 = new JCheckBox();
-		ch24.setBounds(660, 60, 20, 20);
+		ch24.setBounds(930, 60, 20, 20);
 		ch24.setEnabled(false);
 		contentPane.add(ch24);
 
 		ch25 = new JCheckBox();
-		ch25.setBounds(690, 60, 20, 20);
+		ch25.setBounds(960, 60, 20, 20);
 		ch25.setEnabled(false);
 		contentPane.add(ch25);
 
 		ch26 = new JCheckBox();
-		ch26.setBounds(720, 60, 20, 20);
+		ch26.setBounds(990, 60, 20, 20);
 		ch26.setEnabled(false);
 		contentPane.add(ch26);
 
 		ch27 = new JCheckBox();
-		ch27.setBounds(750, 60, 20, 20);
+		ch27.setBounds(1020, 60, 20, 20);
 		ch27.setEnabled(false);
 		contentPane.add(ch27);
 
 		ch28 = new JCheckBox();
-		ch28.setBounds(780, 60, 20, 20);
+		ch28.setBounds(1050, 60, 20, 20);
 		ch28.setEnabled(false);
 		contentPane.add(ch28);
 
 		ch29 = new JCheckBox();
-		ch29.setBounds(810, 60, 20, 20);
+		ch29.setBounds(1080, 60, 20, 20);
 		ch29.setEnabled(false);
 		contentPane.add(ch29);
 
 		ch210 = new JCheckBox();
-		ch210.setBounds(840, 60, 20, 20);
+		ch210.setBounds(1110, 60, 20, 20);
 		ch210.setEnabled(false);
 		contentPane.add(ch210);
 
 		// tercera fila
 		ch31 = new JCheckBox();
-		ch31.setBounds(570, 90, 20, 20);
+		ch31.setBounds(840, 90, 20, 20);
 		ch31.setEnabled(false);
 		contentPane.add(ch31);
 
 		ch32 = new JCheckBox();
-		ch32.setBounds(600, 90, 20, 20);
+		ch32.setBounds(870, 90, 20, 20);
 		ch32.setEnabled(false);
 		contentPane.add(ch32);
 
 		ch33 = new JCheckBox();
-		ch33.setBounds(630, 90, 20, 20);
+		ch33.setBounds(900, 90, 20, 20);
 		ch33.setEnabled(false);
 		contentPane.add(ch33);
 
 		ch34 = new JCheckBox();
-		ch34.setBounds(660, 90, 20, 20);
+		ch34.setBounds(930, 90, 20, 20);
 		ch34.setEnabled(false);
 		contentPane.add(ch34);
 
 		ch35 = new JCheckBox();
-		ch35.setBounds(690, 90, 20, 20);
+		ch35.setBounds(960, 90, 20, 20);
 		ch35.setEnabled(false);
 		contentPane.add(ch35);
 
 		ch36 = new JCheckBox();
-		ch36.setBounds(720, 90, 20, 20);
+		ch36.setBounds(990, 90, 20, 20);
 		ch36.setEnabled(false);
 		contentPane.add(ch36);
 
 		ch37 = new JCheckBox();
-		ch37.setBounds(750, 90, 20, 20);
+		ch37.setBounds(1020, 90, 20, 20);
 		ch37.setEnabled(false);
 		contentPane.add(ch37);
 
 		ch38 = new JCheckBox();
-		ch38.setBounds(780, 90, 20, 20);
+		ch38.setBounds(1050, 90, 20, 20);
 		ch38.setEnabled(false);
 		contentPane.add(ch38);
 
 		ch39 = new JCheckBox();
-		ch39.setBounds(810, 90, 20, 20);
+		ch39.setBounds(1080, 90, 20, 20);
 		ch39.setEnabled(false);
 		contentPane.add(ch39);
 
 		ch310 = new JCheckBox();
-		ch310.setBounds(840, 90, 20, 20);
+		ch310.setBounds(1110, 90, 20, 20);
 		ch310.setEnabled(false);
 		contentPane.add(ch310);
 
 		// cuarta fila
 		ch41 = new JCheckBox();
-		ch41.setBounds(570, 120, 20, 20);
+		ch41.setBounds(840, 120, 20, 20);
 		ch41.setEnabled(false);
 		contentPane.add(ch41);
 
 		ch42 = new JCheckBox();
-		ch42.setBounds(600, 120, 20, 20);
+		ch42.setBounds(870, 120, 20, 20);
 		ch42.setEnabled(false);
 		contentPane.add(ch42);
 
 		ch43 = new JCheckBox();
-		ch43.setBounds(630, 120, 20, 20);
+		ch43.setBounds(900, 120, 20, 20);
 		ch43.setEnabled(false);
 		contentPane.add(ch43);
 
 		ch44 = new JCheckBox();
-		ch44.setBounds(660, 120, 20, 20);
+		ch44.setBounds(930, 120, 20, 20);
 		ch44.setEnabled(false);
 		contentPane.add(ch44);
 
 		ch45 = new JCheckBox();
-		ch45.setBounds(690, 120, 20, 20);
+		ch45.setBounds(960, 120, 20, 20);
 		ch45.setEnabled(false);
 		contentPane.add(ch45);
 
 		ch46 = new JCheckBox();
-		ch46.setBounds(720, 120, 20, 20);
+		ch46.setBounds(990, 120, 20, 20);
 		ch46.setEnabled(false);
 		contentPane.add(ch46);
 
 		ch47 = new JCheckBox();
-		ch47.setBounds(750, 120, 20, 20);
+		ch47.setBounds(1020, 120, 20, 20);
 		ch47.setEnabled(false);
 		contentPane.add(ch47);
 
 		ch48 = new JCheckBox();
-		ch48.setBounds(780, 120, 20, 20);
+		ch48.setBounds(1050, 120, 20, 20);
 		ch48.setEnabled(false);
 		contentPane.add(ch48);
 
 		ch49 = new JCheckBox();
-		ch49.setBounds(810, 120, 20, 20);
+		ch49.setBounds(1080, 120, 20, 20);
 		ch49.setEnabled(false);
 		contentPane.add(ch49);
 
 		ch410 = new JCheckBox();
-		ch410.setBounds(840, 120, 20, 20);
+		ch410.setBounds(1110, 120, 20, 20);
 		ch410.setEnabled(false);
 		contentPane.add(ch410);
 
 		// quinta fila
 		ch51 = new JCheckBox();
-		ch51.setBounds(570, 150, 20, 20);
+		ch51.setBounds(840, 150, 20, 20);
 		ch51.setEnabled(false);
 		contentPane.add(ch51);
 
 		ch52 = new JCheckBox();
-		ch52.setBounds(600, 150, 20, 20);
+		ch52.setBounds(870, 150, 20, 20);
 		ch52.setEnabled(false);
 		contentPane.add(ch52);
 
 		ch53 = new JCheckBox();
-		ch53.setBounds(630, 150, 20, 20);
+		ch53.setBounds(900, 150, 20, 20);
 		ch53.setEnabled(false);
 		contentPane.add(ch53);
 
 		ch54 = new JCheckBox();
-		ch54.setBounds(660, 150, 20, 20);
+		ch54.setBounds(930, 150, 20, 20);
 		ch54.setEnabled(false);
 		contentPane.add(ch54);
 
 		ch55 = new JCheckBox();
-		ch55.setBounds(690, 150, 20, 20);
+		ch55.setBounds(960, 150, 20, 20);
 		ch55.setEnabled(false);
 		contentPane.add(ch55);
 
 		ch56 = new JCheckBox();
-		ch56.setBounds(720, 150, 20, 20);
+		ch56.setBounds(990, 150, 20, 20);
 		ch56.setEnabled(false);
 		contentPane.add(ch56);
 
 		ch57 = new JCheckBox();
-		ch57.setBounds(750, 150, 20, 20);
+		ch57.setBounds(1020, 150, 20, 20);
 		ch57.setEnabled(false);
 		contentPane.add(ch57);
 
 		ch58 = new JCheckBox();
-		ch58.setBounds(780, 150, 20, 20);
+		ch58.setBounds(1050, 150, 20, 20);
 		ch58.setEnabled(false);
 		contentPane.add(ch58);
 
 		ch59 = new JCheckBox();
-		ch59.setBounds(810, 150, 20, 20);
+		ch59.setBounds(1080, 150, 20, 20);
 		ch59.setEnabled(false);
 		contentPane.add(ch59);
 
 		ch510 = new JCheckBox();
-		ch510.setBounds(840, 150, 20, 20);
+		ch510.setBounds(1110, 150, 20, 20);
 		ch510.setEnabled(false);
 		contentPane.add(ch510);
 
 		// sexta fila
 		ch61 = new JCheckBox();
-		ch61.setBounds(570, 180, 20, 20);
+		ch61.setBounds(840, 180, 20, 20);
 		ch61.setEnabled(false);
 		contentPane.add(ch61);
 
 		ch62 = new JCheckBox();
-		ch62.setBounds(600, 180, 20, 20);
+		ch62.setBounds(870, 180, 20, 20);
 		ch62.setEnabled(false);
 		contentPane.add(ch62);
 
 		ch63 = new JCheckBox();
-		ch63.setBounds(630, 180, 20, 20);
+		ch63.setBounds(900, 180, 20, 20);
 		ch63.setEnabled(false);
 		contentPane.add(ch63);
 
 		ch64 = new JCheckBox();
-		ch64.setBounds(660, 180, 20, 20);
+		ch64.setBounds(930, 180, 20, 20);
 		ch64.setEnabled(false);
 		contentPane.add(ch64);
 
 		ch65 = new JCheckBox();
-		ch65.setBounds(690, 180, 20, 20);
+		ch65.setBounds(960, 180, 20, 20);
 		ch65.setEnabled(false);
 		contentPane.add(ch65);
 
 		ch66 = new JCheckBox();
-		ch66.setBounds(720, 180, 20, 20);
+		ch66.setBounds(990, 180, 20, 20);
 		ch66.setEnabled(false);
 		contentPane.add(ch66);
 
 		ch67 = new JCheckBox();
-		ch67.setBounds(750, 180, 20, 20);
+		ch67.setBounds(1020, 180, 20, 20);
 		ch67.setEnabled(false);
 		contentPane.add(ch67);
 
 		ch68 = new JCheckBox();
-		ch68.setBounds(780, 180, 20, 20);
+		ch68.setBounds(1050, 180, 20, 20);
 		ch68.setEnabled(false);
 		contentPane.add(ch68);
 
 		ch69 = new JCheckBox();
-		ch69.setBounds(810, 180, 20, 20);
+		ch69.setBounds(1080, 180, 20, 20);
 		ch69.setEnabled(false);
 		contentPane.add(ch69);
 
 		ch610 = new JCheckBox();
-		ch610.setBounds(840, 180, 20, 20);
+		ch610.setBounds(1110, 180, 20, 20);
 		ch610.setEnabled(false);
 		contentPane.add(ch610);
 
 		// septima fila
 		ch71 = new JCheckBox();
-		ch71.setBounds(570, 210, 20, 20);
+		ch71.setBounds(840, 210, 20, 20);
 		ch71.setEnabled(false);
 		contentPane.add(ch71);
 
 		ch72 = new JCheckBox();
-		ch72.setBounds(600, 210, 20, 20);
+		ch72.setBounds(870, 210, 20, 20);
 		ch72.setEnabled(false);
 		contentPane.add(ch72);
 
 		ch73 = new JCheckBox();
-		ch73.setBounds(630, 210, 20, 20);
+		ch73.setBounds(900, 210, 20, 20);
 		ch73.setEnabled(false);
 		contentPane.add(ch73);
 
 		ch74 = new JCheckBox();
-		ch74.setBounds(660, 210, 20, 20);
+		ch74.setBounds(930, 210, 20, 20);
 		ch74.setEnabled(false);
 		contentPane.add(ch74);
 
 		ch75 = new JCheckBox();
-		ch75.setBounds(690, 210, 20, 20);
+		ch75.setBounds(960, 210, 20, 20);
 		ch75.setEnabled(false);
 		contentPane.add(ch75);
 
 		ch76 = new JCheckBox();
-		ch76.setBounds(720, 210, 20, 20);
+		ch76.setBounds(990, 210, 20, 20);
 		ch76.setEnabled(false);
 		contentPane.add(ch76);
 
 		ch77 = new JCheckBox();
-		ch77.setBounds(750, 210, 20, 20);
+		ch77.setBounds(1020, 210, 20, 20);
 		ch77.setEnabled(false);
 		contentPane.add(ch77);
 
 		ch78 = new JCheckBox();
-		ch78.setBounds(780, 210, 20, 20);
+		ch78.setBounds(1050, 210, 20, 20);
 		ch78.setEnabled(false);
 		contentPane.add(ch78);
 
 		ch79 = new JCheckBox();
-		ch79.setBounds(810, 210, 20, 20);
+		ch79.setBounds(1080, 210, 20, 20);
 		ch79.setEnabled(false);
 		contentPane.add(ch79);
 
 		ch710 = new JCheckBox();
-		ch710.setBounds(840, 210, 20, 20);
+		ch710.setBounds(1110, 210, 20, 20);
 		ch710.setEnabled(false);
 		contentPane.add(ch710);
 
 		// octava fila
 		ch81 = new JCheckBox();
-		ch81.setBounds(570, 240, 20, 20);
+		ch81.setBounds(840, 240, 20, 20);
 		ch81.setEnabled(false);
 		contentPane.add(ch81);
 
 		ch82 = new JCheckBox();
-		ch82.setBounds(600, 240, 20, 20);
+		ch82.setBounds(870, 240, 20, 20);
 		ch82.setEnabled(false);
 		contentPane.add(ch82);
 
 		ch83 = new JCheckBox();
-		ch83.setBounds(630, 240, 20, 20);
+		ch83.setBounds(900, 240, 20, 20);
 		ch83.setEnabled(false);
 		contentPane.add(ch83);
 
 		ch84 = new JCheckBox();
-		ch84.setBounds(660, 240, 20, 20);
+		ch84.setBounds(930, 240, 20, 20);
 		ch84.setEnabled(false);
 		contentPane.add(ch84);
 
 		ch85 = new JCheckBox();
-		ch85.setBounds(690, 240, 20, 20);
+		ch85.setBounds(960, 240, 20, 20);
 		ch85.setEnabled(false);
 		contentPane.add(ch85);
 
 		ch86 = new JCheckBox();
-		ch86.setBounds(720, 240, 20, 20);
+		ch86.setBounds(990, 240, 20, 20);
 		ch86.setEnabled(false);
 		contentPane.add(ch86);
 
 		ch87 = new JCheckBox();
-		ch87.setBounds(750, 240, 20, 20);
+		ch87.setBounds(1020, 240, 20, 20);
 		ch87.setEnabled(false);
 		contentPane.add(ch87);
 
 		ch88 = new JCheckBox();
-		ch88.setBounds(780, 240, 20, 20);
+		ch88.setBounds(1050, 240, 20, 20);
 		ch88.setEnabled(false);
 		contentPane.add(ch88);
 
 		ch89 = new JCheckBox();
-		ch89.setBounds(810, 240, 20, 20);
+		ch89.setBounds(1080, 240, 20, 20);
 		ch89.setEnabled(false);
 		contentPane.add(ch89);
 
 		ch810 = new JCheckBox();
-		ch810.setBounds(840, 240, 20, 20);
+		ch810.setBounds(1110, 240, 20, 20);
 		ch810.setEnabled(false);
 		contentPane.add(ch810);
 
 		// novena fila
 		ch91 = new JCheckBox();
-		ch91.setBounds(570, 270, 20, 20);
+		ch91.setBounds(840, 270, 20, 20);
 		ch91.setEnabled(false);
 		contentPane.add(ch91);
 
 		ch92 = new JCheckBox();
-		ch92.setBounds(600, 270, 20, 20);
+		ch92.setBounds(870, 270, 20, 20);
 		ch92.setEnabled(false);
 		contentPane.add(ch92);
 
 		ch93 = new JCheckBox();
-		ch93.setBounds(630, 270, 20, 20);
+		ch93.setBounds(900, 270, 20, 20);
 		ch93.setEnabled(false);
 		contentPane.add(ch93);
 
 		ch94 = new JCheckBox();
-		ch94.setBounds(660, 270, 20, 20);
+		ch94.setBounds(930, 270, 20, 20);
 		ch94.setEnabled(false);
 		contentPane.add(ch94);
 
 		ch95 = new JCheckBox();
-		ch95.setBounds(690, 270, 20, 20);
+		ch95.setBounds(960, 270, 20, 20);
 		ch95.setEnabled(false);
 		contentPane.add(ch95);
 
 		ch96 = new JCheckBox();
-		ch96.setBounds(720, 270, 20, 20);
+		ch96.setBounds(990, 270, 20, 20);
 		ch96.setEnabled(false);
 		contentPane.add(ch96);
 
 		ch97 = new JCheckBox();
-		ch97.setBounds(750, 270, 20, 20);
+		ch97.setBounds(1020, 270, 20, 20);
 		ch97.setEnabled(false);
 		contentPane.add(ch97);
 
 		ch98 = new JCheckBox();
-		ch98.setBounds(780, 270, 20, 20);
+		ch98.setBounds(1050, 270, 20, 20);
 		ch98.setEnabled(false);
 		contentPane.add(ch98);
 
 		ch99 = new JCheckBox();
-		ch99.setBounds(810, 270, 20, 20);
+		ch99.setBounds(1080, 270, 20, 20);
 		ch99.setEnabled(false);
 		contentPane.add(ch99);
 
 		ch910 = new JCheckBox();
-		ch910.setBounds(840, 270, 20, 20);
+		ch910.setBounds(1110, 270, 20, 20);
 		ch910.setEnabled(false);
 		contentPane.add(ch910);
 
 		// decima fila
 		ch101 = new JCheckBox();
-		ch101.setBounds(570, 300, 20, 20);
+		ch101.setBounds(840, 300, 20, 20);
 		ch101.setEnabled(false);
 		contentPane.add(ch101);
 
 		ch102 = new JCheckBox();
-		ch102.setBounds(600, 300, 20, 20);
+		ch102.setBounds(870, 300, 20, 20);
 		ch102.setEnabled(false);
 		contentPane.add(ch102);
 
 		ch103 = new JCheckBox();
-		ch103.setBounds(630, 300, 20, 20);
+		ch103.setBounds(900, 300, 20, 20);
 		ch103.setEnabled(false);
 		contentPane.add(ch103);
 
 		ch104 = new JCheckBox();
-		ch104.setBounds(660, 300, 20, 20);
+		ch104.setBounds(930, 300, 20, 20);
 		ch104.setEnabled(false);
 		contentPane.add(ch104);
 
 		ch105 = new JCheckBox();
-		ch105.setBounds(690, 300, 20, 20);
+		ch105.setBounds(960, 300, 20, 20);
 		ch105.setEnabled(false);
 		contentPane.add(ch105);
 
 		ch106 = new JCheckBox();
-		ch106.setBounds(720, 300, 20, 20);
+		ch106.setBounds(990, 300, 20, 20);
 		ch106.setEnabled(false);
 		contentPane.add(ch106);
 
 		ch107 = new JCheckBox();
-		ch107.setBounds(750, 300, 20, 20);
+		ch107.setBounds(1020, 300, 20, 20);
 		ch107.setEnabled(false);
 		contentPane.add(ch107);
 
 		ch108 = new JCheckBox();
-		ch108.setBounds(780, 300, 20, 20);
+		ch108.setBounds(1050, 300, 20, 20);
 		ch108.setEnabled(false);
 		contentPane.add(ch108);
 
 		ch109 = new JCheckBox();
-		ch109.setBounds(810, 300, 20, 20);
+		ch109.setBounds(1080, 300, 20, 20);
 		ch109.setEnabled(false);
 		contentPane.add(ch109);
 
 		ch1010 = new JCheckBox();
-		ch1010.setBounds(840, 300, 20, 20);
+		ch1010.setBounds(1110, 300, 20, 20);
 		ch1010.setEnabled(false);
 		contentPane.add(ch1010);
 		
