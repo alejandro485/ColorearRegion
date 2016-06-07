@@ -76,6 +76,14 @@ public class Grafo {
 		for(int i=0;i<listaNodos.length; i++){
 			if(listaNodos[i]!=null){
 				buscarRegiones(i, i,i+"");
+				
+				for(int j=0;j<listaNodos.length;j++){
+					Nodo n=listaNodos[i].n;
+					while(n!=null){
+						n.visitado=false;
+						n=n.sig;
+					}
+				}
 			}
 		}
 		Polygon p;
@@ -104,27 +112,41 @@ public class Grafo {
 		NodoGrafo ng2=listaNodos[in2];
 		Nodo n1=ng1.n;
 		Nodo n2=ng2.n;
-			if(in1<in2){
-				nom+=in2;
-				while(n2!=null){
-					n1=ng1.n;
-					while(n1!=null){
-						if(n2.index==n1.index){
-							return nom+""+n1.index+""+in1;
-						}
-						n1=n1.sig;
+		if(in1!=in2){
+			nom+=in2;
+			while(n2!=null){
+				n1=ng1.n;
+				while(n1!=null){
+					if(n2.index==n1.index){
+						return nom+""+n1.index+""+in1;
 					}
-					n2=n2.sig;
+					n1=n1.sig;
 				}
+				n2=n2.sig;
 			}
+		}
 		n2=ng2.n;
 		while(n2!=null){
 			String s=buscarRegiones(in1, n2.index,nom);
 			if(s.length()>3){
+				n2.visitado=true;
 				nombres.add(s);
 			}
 			n2=n2.sig;
 		}
+		n2=ng2.n;
+		while(n2!=null){
+			n1=n2.sig;
+			while(n1!=null){
+				String s=buscarRegiones(n1.index,n2.index, nom);
+				if(s.length()>3 && !n2.visitado){
+					n2.visitado=true;
+					nombres.add(s);
+				}
+				n1=n1.sig;
+			}
+			n2=n2.sig;
+		}	
 		return "";
 	}
 	
